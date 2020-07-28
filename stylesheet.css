@@ -81,22 +81,23 @@ tr,
 p,
 a {
   font-family: 'Titillium Web', 'Lato', 'Noto Sans TC', Verdana, Helvetica, sans-serif;
-  font-size: 14px
+  font-size: 16px
 }
 
 strong {
   font-family: 'Titillium Web','Lato', 'Noto Sans TC', Verdana, Helvetica, sans-serif;
-  font-size: 14px;
+  font-size: 16px;
 }
 
 heading {
   font-family: 'Titillium Web', 'Lato', 'Noto Sans TC', Verdana, Helvetica, sans-serif;
-  font-size: 22px;
+  font-size: 24px;
+  font-weight: 1000;
 }
 
 papertitle {
   font-family: 'Titillium Web', 'Lato', 'Noto Sans TC',  Verdana, Helvetica, sans-serif;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 700
 }
 
