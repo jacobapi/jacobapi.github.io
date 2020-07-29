@@ -57,14 +57,87 @@
           </tr>
         </tbody></table>
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+          
+          <tr onmouseout="apm_stop()" onmouseover="apm_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='apm_image'>
+                  <img src='images/progress2.png' width="160"></div>
+                <img src='images/progress1.png' width="160">
+              </div>
+              <script type="text/javascript">
+                function apm_start() {
+                  document.getElementById('apm_image').style.opacity = "1";
+                }
+
+                function apm_stop() {
+                  document.getElementById('apm_image').style.opacity = "0";
+                }
+                apm_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <!-- <a href="https://people.eecs.berkeley.edu/~bmild/fourfeat/index.html"> -->
+                <papertitle>Automated Progress Monitoring Using Multiview Geometry and Material Classification</papertitle>
+              <!-- </a> -->
+              <br>
+              <strong>Jacob J. Lin</strong>, Amir Ibrahim, Mani Golparvar-Fard, Derek Hoiem, Jae Yong Lee
+              <br>
+        <!-- <em>arXiv</em>, 2020  
+              <br> -->
+              <p>A new end-to-end system is developed that reasons about geometry and appearance using CNN model. The system reports the state of work in progress per BIM element and schedule task.</p>
+
+              <a href="https://ascelibrary.org/doi/abs/10.1061/9780784482438.021">paper 1</a>
+              /
+              <a href="blank">paper 2 (under review)</a>
+              
+            </td>
+          </tr> 
+          
+          <tr onmouseout="bridge_stop()" onmouseover="bridge_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='bridge_image'>
+                  <img src='images/bridge1.png' width="160"></div>
+                <img src='images/bridge2.png' width="160">
+              </div>
+              <script type="text/javascript">
+                function bridge_start() {
+                  document.getElementById('bridge_image').style.opacity = "1";
+                }
+
+                function bridge_stop() {
+                  document.getElementById('bridge_image').style.opacity = "0";
+                }
+                bridge_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <!-- <a href="https://people.eecs.berkeley.edu/~bmild/fourfeat/index.html"> -->
+                <papertitle>Automated Bridge Inspection with Aerial Robots: Visual Data Capture, 3D Mapping, Defect Detection, Analysis and Reporting</papertitle>
+              <!-- </a> -->
+              <br>
+              <strong>Jacob J. Lin</strong>, Amir Ibrahim, Mani Golparvar-Fard
+              <br>
+        <!-- <em>arXiv</em>, 2020  
+              <br> -->
+              <p>We present an end-to-end robotic bridge inspection system consisting of five tightly coupled methods to (1) create automatic data collection missions; (2) assure visual quality of such missions; (3) reconstruct 3D models of elevated structures; (4) detect and localize surface distresses in 3D; and (5) generate reports complying with highway agencies' requirements.</p>
+
+              <a href="blank">paper 1 (under review)</a>
+              
+            </td>
+          </tr>
+          
+
+
 
 
           <tr onmouseout="ff_stop()" onmouseover="ff_start()">
             <td style="padding:20px;width:25%;vertical-align:middle">
               <div class="one">
                 <div class="two" id='ff_image'>
-                  <img src='images/bim.png' width="160"></div>
-                <img src='images/bim_pc.png' width="160">
+                  <img src='images/bim_pc.png' width="160"></div>
+                <img src='images/bim.png' width="160">
               </div>
               <script type="text/javascript">
                 function ff_start() {
@@ -86,7 +159,7 @@
               <br>
         <!-- <em>arXiv</em>, 2020  
               <br> -->
-              <p></p>
+
               <p>A visual and virtual project control system is presented that improves understanding of how construction progress can be captured, communicated, and analyzed in the form of a production system.</p>
 
               <a href="https://link.springer.com/chapter/10.1007/978-3-319-91635-4_21">paper 1</a>
@@ -94,7 +167,9 @@
               <a href="https://ascelibrary.org/doi/abs/10.1061/9780784479827.173">paper 2</a>
               /
               <a href="https://ascelibrary.org/doi/abs/10.1061/9780784479247.020">paper 3*</a>
-              <strong font-color="red">*ASCE DSA Best Paper Award</strong>
+              <br>
+              <font color = "red"><strong>*ASCE DSA Best Paper Award</strong></font>
+              
             </td>
           </tr> 
 
@@ -103,8 +178,8 @@
             <td style="padding:20px;width:25%;vertical-align:middle">
               <div class="one">
                 <div class="two" id='thresh_image'>
-                  <img src='images/thresh_after.png' width="160"></div>
-                <img src='images/thresh_before.jpg' width="160">
+                  <img src='images/at_risk.png' width="160"></div>
+                <img src='images/at_risk.png' width="160">
               </div>
               <script type="text/javascript">
                 function thresh_start() {
@@ -118,21 +193,15 @@
               </script>
             </td>
             <td style="padding:20px;width:75%;vertical-align:middle">
-              <a href="https://arxiv.org/abs/2007.07350">
-                <papertitle>A Generalization of Otsu's Method and Minimum Error Thresholding</papertitle>
-              </a>
+                <papertitle>Predictive Schedule Analytics for Proactive Project Controls</papertitle>
               <br>
-              <strong>Jonathan T. Barron</strong>
+              <strong>Jacob J. Lin</strong>, Mani Golparvar-Fard
               <br>
-              <em>ECCV</em>, 2020 &nbsp <font color=#FF8080><strong>(Spotlight)</strong></font>
-              <br>
-              <a href="https://github.com/jonbarron/hist_thresh">code</a> / 
-              <a href="https://www.youtube.com/watch?v=rHtQQlQo1Q4">video</a> / 
-              <a href="data/BarronECCV2020.bib">bibtex</a>
+              <a href="https://ascelibrary.org/doi/abs/10.1061/9780784480830.019">Paper 1</a> 
               <br>
               <p></p>
               <p>
-              A simple and fast Bayesian algorithm that can be written in ~10 lines of code outperforms or matches giant CNNs on image binarization, and unifies three classic thresholding algorithms.
+              The system predicts the reliability of the look-ahead plans, supports root-cause assessment on plan failure, facilitates information flows and decentralizes decision-making. 
               </p>
             </td>
           </tr>  
@@ -142,8 +211,8 @@
             <td style="padding:20px;width:25%;vertical-align:middle">
               <div class="one">
                 <div class="two" id='uflow_image'>
-                  <img src='images/uflow_after.png' width="160"></div>
-                <img src='images/uflow_before.jpg' width="160">
+                  <img src='images/logistics1.gif' width="160"></div>
+                <img src='images/logistics2.jpg' width="160">
               </div>
               <script type="text/javascript">
                 function uflow_start() {
@@ -157,24 +226,20 @@
               </script>
             </td>
             <td style="padding:20px;width:75%;vertical-align:middle">
-              <a href="https://arxiv.org/abs/2006.04902">
-                <papertitle>What Matters in Unsupervised Optical Flow</papertitle>
-              </a>
+                <papertitle>Construction Site Logistics Simulation</papertitle>
               <br>
-              <a href="http://ricojonschkowski.com/">Rico Jonschkowski</a>,
-              <a href="https://www.linkedin.com/in/austin-charles-stone-1ba33b138/">Austin Stone</a>,
-              <strong>Jonathan T. Barron</strong>,
-              <a href="https://research.google/people/ArielGordon/">Ariel Gordon</a>,
-              <a href="https://www.linkedin.com/in/kurt-konolige/">Kurt Konolige</a>,
-              <a href="https://research.google/people/AneliaAngelova/">Anelia Angelova</a>
+              <strong>Jacob J. Lin</strong>,
+              Chi-En Yang,
+              Wei-Han Hung,
+              Shih-Chung Kang
               <br>
-              <em>ECCV</em>, 2020 &nbsp <font color="red"><strong>(Oral Presentation)</strong></font>
-              <br>
-              <a href="https://github.com/google-research/google-research/tree/master/uflow">code</a>
+              <a href="https://ascelibrary.org/doi/abs/10.1061/(ASCE)CP.1943-5487.0000408">paper 1</a>
+              /
+              <a href="https://viejournal.springeropen.com/articles/10.1186/2213-7459-1-12">paper 2</a>             
               <br>
               <p></p>
               <p>
-              Extensive experimentation yields a simple optical flow technique that is trained on only unlabeled videos, but still works as well as supervised techniques.
+              A game engine-based simulation system is developed to automatically evaluate construction site logistics plan.
               </p>
             </td>
           </tr>
